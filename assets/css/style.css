@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #334155;
+    background-color: #f8fafc;
+    padding-top: 70px; /* Offset for the sticky top navbar */
+}
+
+/* --- STICKY TOP NAVBAR --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0f172a; /* Deep Minimal Executive Navy */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    color: #ffffff;
+    background-color: #1e293b;
+}
+
+.nav-btn.active {
+    color: #ffffff;
+    background-color: #38bdf8; /* Elite Accent Blue */
+    font-weight: 600;
+}
+
+/* --- WRAPPER FOR CONTENT PAGE CARD --- */
+.main-wrapper {
+    max-width: 1000px;
+    margin: 3rem auto;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    padding: 3.5rem 4rem;
+    min-height: 550px;
+}
+
+/* --- ROUTER LOGIC --- */
+.page-content {
+    display: none;
+    animation: smoothView 0.35s ease;
+}
+
+.page-content.active-page {
+    display: block;
+}
+
+@keyframes smoothView {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- HOME PROFILE HEADER --- */
+.profile-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px; /* Elegant slightly curved image border instead of basic circle */
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title-block h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.3rem;
+}
+
+.sub-role {
+    font-weight: 600;
+    color: #38bdf8;
+    font-size: 0.95rem;
+}
+
+.sub-inst {
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.sub-office {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 0.4rem;
+}
+
+.sub-office i {
+    color: #94a3b8;
+    margin-right: 0.2rem;
+}
+
+/* --- SOCIAL GRID LINKS --- */
+.social-grid {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.social-grid a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.social-grid a:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2.5rem 0;
+}
+
+/* --- REUSABLE CORE STYLES --- */
+h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+p {
+    color: #475569;
+    text-align: justify;
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.section-intro {
+    font-size: 1rem;
+    color: #64748b;
+    border-left: 3px solid #cbd5e1;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-block {
+    margin-bottom: 2.5rem;
+}
+
+.styled-list {
+    list-style: none;
+}
+
+.styled-list li {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.styled-list i {
+    color: #38bdf8;
+    margin-right: 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* --- MODERN CONTENT ITEM CARDS --- */
+.card-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.8rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.card-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card-title {
+    font-size: 1.05rem;
+    color: #0f172a;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.card-authors {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 0.2rem;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-top: 0.8rem;
+    background: #f8fafc;
+    padding: 0.8rem;
+    border-radius: 6px;
+}
+
+/* --- BADGES --- */
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.6rem;
+}
+
+.active-badge { background: #e0f2fe; color: #0369a1; }
+.repo-badge { background: #f1f5f9; color: #475569; }
+
+/* --- CARD BUTTON ACTIONS --- */
+.card-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-action {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-action:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+/* --- TIMELINE COMPONENT FOR TALKS --- */
+.timeline-row {
+    display: flex;
+    gap: 2.5rem;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.5rem 0;
+}
+
+.time-meta {
+    width: 15%;
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 0.95rem;
+}
+
+.time-details h4 {
+    font-size: 1rem;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.location-tag {
+    font-size: 0.85rem;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+/* --- QUOTE CALLOUT FOR TEACHING --- */
+.teaching-quote {
+    font-style: italic;
+    color: #64748b;
+    border-left: 4px solid #38bdf8;
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.compact-list {
+    margin-top: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+/* --- PREMIUM CV DATA TABLE --- */
+.premium-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.premium-table td {
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+    vertical-align: top;
+}
+
+.premium-table td:first-child {
+    width: 25%;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* --- RESPONSIVE CORE MEDIA BREAKPOINTS --- */
+@media (max-width: 820px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 0.5rem;
+        height: auto;
+    }
+    .navbar {
+        height: auto;
+        position: relative;
+    }
+    body {
+        padding-top: 0;
+    }
+    .main-wrapper {
+        margin: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .social-grid {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .timeline-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .time-meta {
+        width: 100%;
+    }
+}

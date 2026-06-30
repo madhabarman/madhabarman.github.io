@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhab Barman | Academic Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-brand">Madhab Barman</span>
+            <div class="nav-links">
+                <button class="nav-btn active" onclick="switchPage(event, 'home')">Home</button>
+                <button class="nav-btn" onclick="switchPage(event, 'publications')">Publications & Work</button>
+                <button class="nav-btn" onclick="switchPage(event, 'talks')">Talks</button>
+                <button class="nav-btn" onclick="switchPage(event, 'teaching')">Teaching</button>
+                <button class="nav-btn" onclick="switchPage(event, 'misc')">Miscellaneous</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        
+        <div id="home" class="page-content active-page">
+            <div class="profile-header">
+                <img src="assets/images/profile.jpg" alt="Dr. Madhab Barman" class="profile-img">
+                <div class="profile-title-block">
+                    <h1>Madhab Barman</h1>
+                    <p class="sub-role">Postdoctoral Fellow, Decision Sciences Department</p>
+                    <p class="sub-inst">Indian Institute of Management Bangalore</p>
+                    <p class="sub-office"><i class="fa-solid fa-building"></i> Office: NF2025 | <i class="fa-solid fa-solid fa-envelope"></i> Email: madhab.barman@iimb.ac.in</p>
+                    
+                    <div class="social-grid">
+                        <a href="assets/My_CV.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> My CV</a>
+                        <a href="https://scholar.google.com/citations?user=fmGBcOcAAAAJ&hl=en" target="_blank"><i class="fa-graduation-cap fas"></i> Scholar</a>
+                        <a href="https://www.researchgate.net/profile/Madhab-Barman" target="_blank"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
+                        <a href="https://github.com/MadhabBarman" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/madhab-barman-8b7a24290/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <section class="section-block">
+                <h2>About Me</h2>
+                <p>I am an academic researcher working at the intersection of rigorous mathematical theory, applied probability and statistics, data science frameworks, and scalable computational tools. Currently, I am a Postdoctoral Fellow in the Decision Sciences Department at the Indian Institute of Management Bangalore (IIMB), working alongside 
+    <a href="https://soudeepd.github.io/" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Prof. Soudeep Deb</a> and 
+    <a href="https://ananddeo161093.github.io/" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Prof. Anand Deo</a>. 
+    Prior to this role, I conducted research at Sorbonne University Abu Dhabi under the supervision of 
+    <a href="https://www.ctanujit.org/" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Prof. Tanujit Chakraborty</a>, focusing on pairing deep learning frameworks with real-world datasets. 
+    I completed my PhD on network-driven nonlinear epidemic model analysis and simulations with 
+    <a href="https://mishranachiketa.wordpress.com/" target="_blank" style="color: #38bdf8; text-decoration: none; font-weight: 500;">Prof. Nachiketa Mishra</a> at the Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram, Chennai.</p>
+                <p>My core research concentrates on developing data-driven statistical modeling for spatial scaling in <strong>Extreme Value Theory (EVT)</strong>. I apply these methodologies to investigate rare event simulations, such as heatwaves and heavy rainfall. This framework allows us to model observable extreme events and leverage tail extrapolation to estimate rare event probabilities that lie well beyond the observed data range.</p>
+            </section>
+
+            <section class="section-block">
+                <h2>Areas of Interest</h2>
+                <ul class="styled-list">
+                    <li><i class="fa-solid fa-circle-nodes"></i> Extreme Value Theory (EVT) & Spatial Extremes</li>
+                    <li><i class="fa-solid fa-chart-line"></i> Energy-Balanced Climate Modeling and Data-Driven Statistical Modeling</li>
+                    <li><i class="fa-solid fa-brain"></i> Machine Learning & Epidemic-informed Deep Learning</li>
+                    <li><i class="fa-solid fa-gears"></i> Network-Driven Epidemic Modeling and Stochastic Perturbations</li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="publications" class="page-content">
+            <h2>Publications & Research</h2>
+            <p class="section-intro">Modeling and estimation of spatial extremes in data science and infrastructure contexts.</p>
+            
+            <div class="card-item">
+                <span class="badge active-badge">Working Paper</span>
+                <h3 class="card-title">Data-Driven Estimation of Rare Event Probabilities for Spatial Extremes and Its Applications</h3>
+                <p class="card-authors"><strong>M. Barman</strong>, et al.</p>
+                <p class="card-desc">This work introduces novel frameworks combining graph Laplacian diffusion, mobility-driven dynamical systems, and epidemic modeling to model spatial extreme events dynamically.</p>
+                <div class="card-actions">
+                    <a href="#" class="btn-action"><i class="fa-solid fa-file-pdf"></i> Preprint</a>
+                    <a href="#" class="btn-action"><i class="fa-brands fa-github"></i> Code Repo</a>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <span class="badge repo-badge">Technical Paper</span>
+                <h3 class="card-title">Statistical Modeling Frameworks for Spatial Scaling in Extreme Value Theory</h3>
+                <p class="card-authors"><strong>M. Barman</strong></p>
+                <div class="card-actions">
+                    <a href="#" class="btn-action"><i class="fa-solid fa-file-lines"></i> Abstract</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="talks" class="page-content">
+            <h2>Talks & Presentations</h2>
+            <p class="section-intro">Selected academic conference presentations, seminars, and workshop lectures.</p>
+            
+            <div class="timeline-row">
+                <div class="time-meta">Feb 2026</div>
+                <div class="time-details">
+                    <h4>Advances in Risk Analysis & Management: A focus on Emergent Risks</h4>
+                    <p class="location-tag">Singapore</p>
+                    <p>Presented core findings on data-driven statistical modeling for spatial scaling in extreme value theory and associated real-world impacts.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="teaching" class="page-content">
+            <h2>Teaching Portfolio</h2>
+            <p class="teaching-quote">"My teaching philosophy centers on pairing abstract, rigorous mathematical foundations with modern computational validation, running concurrent hands-on coding environments."</p>
+            
+            <div class="card-item">
+                <h3 class="card-title">Teaching Assistant (HTRA Scheme)</h3>
+                <p class="card-desc">Delivered targeted recitation sessions, constructed grading schematics, and held office hours for core mathematical and computational pathways:</p>
+                <ul class="styled-list compact-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Calculus & Linear Algebra</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Numerical Methods & Ordinary Differential Equations</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Optimization in Machine Learning</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> C-Programming</li>
+                </ul>
+            </div>
+
+            <div class="card-item">
+                <h3 class="card-title">Subject Matter Expert</h3>
+                <p class="card-desc">Served as an online educator and expert for Calculus and Real Analysis, focusing on delivering crystal-clear, highly responsive guidance to break down advanced theoretical calculus concepts for an international student body.</p>
+            </div>
+        </div>
+
+        <div id="misc" class="page-content">
+            <h2>Miscellaneous</h2>
+            
+            <div class="card-item">
+                <h3 class="card-title"><i class="fa-solid fa-terminal"></i> Technical Toolkit</h3>
+                <table class="premium-table">
+                    <tr>
+                        <td><strong>Languages</strong></td>
+                        <td>R, Python, C-Programming</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Methodologies</strong></td>
+                        <td>Extreme Value Analysis, Spatial Modeling, Deep Learning, Optimization</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Frameworks</strong></td>
+                        <td>Tidyverse, PyTorch, NumPy, Scikit-Learn, LaTeX, Git</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function switchPage(event, pageId) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.remove('active-page'));
+
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(pageId).classList.add('active-page');
+            event.currentTarget.classList.add('active');
+            
+            // Auto scroll to top of page on click
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+
+</body>
+</html>
